@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | BELLS English Academy</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="brand">
+                <i class="fas fa-bell"></i>
+                <span>BELLS English Academy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                <li><a href="faculty.html" class="active">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="padding: 140px 0 60px;">
+            <div class="container">
+                <h1>Meet Our Mentors</h1>
+                <p>Guided by experts who are passionate about your language transformation.</p>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                    <!-- Managing Director -->
+                    <div class="card" style="display: flex; flex-direction: column; gap: 1.5rem; text-align: left;">
+                        <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=300&h=300" alt="Suresh P." style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                            <div>
+                                <h3 style="font-size: 1.8rem; margin-bottom: 0.25rem;">Suresh P.</h3>
+                                <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px;">MANAGING DIRECTOR & FACULTY</p>
+                            </div>
+                        </div>
+                        <div style="opacity: 0.9; font-size: 0.95rem;">
+                            <p style="margin-bottom: 1rem; font-weight: 500;">MA English Literature | B.Ed | PG Diploma in ELT | MSW</p>
+                            <p style="line-height: 1.7;">With a profound passion for breaking language barriers, he founded BELLS to empower learners, helping them gain the confidence needed to succeed in global education and careers.</p>
+                            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+                                <p style="font-size: 0.85rem; opacity: 0.7;"><i class="fas fa-quote-left" style="margin-right: 0.5rem;"></i> Committed to educational excellence and student success.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Head -->
+                    <div class="card" style="display: flex; flex-direction: column; gap: 1.5rem; text-align: left;">
+                        <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300&h=300" alt="Girija Krishnan" style="width: 120px; height: 120px; border-radius: 20px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                            <div>
+                                <h3 style="font-size: 1.8rem; margin-bottom: 0.25rem;">Girija Krishnan</h3>
+                                <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px;">ACADEMIC HEAD & DIRECTOR</p>
+                                <p style="font-style: italic; color: var(--secondary); font-weight: 700; margin-top: 0.5rem;">"Easy English – Less Time"</p>
+                            </div>
+                        </div>
+                        <div style="opacity: 0.9; font-size: 0.95rem;">
+                            <p style="margin-bottom: 1rem; font-weight: 500;">Senior Faculty | Director | IELTS & Soft Skills Expert</p>
+                            <ul class="card-list">
+                                <li>
+                                    <i class="fas fa-award" style="color: var(--secondary);"></i>
+                                    <span>Recipient of Women Empowerment Award</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-graduation-cap" style="color: var(--primary);"></i>
+                                    <span>30+ years of teaching experience</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-globe" style="color: var(--primary);"></i>
+                                    <span>Taught in Delhi, UAE, Al-Ain, Bangalore</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-users" style="color: var(--primary);"></i>
+                                    <span>Guided more than 1 Lakh students</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                                    <span>Specialist in Communicative English & Counselling</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 BELLS English Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+</body>
+</html>
+

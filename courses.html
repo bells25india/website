@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | BELLS English Academy</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="brand">
+                <i class="fas fa-bell"></i>
+                <span>BELLS English Academy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="padding: 140px 0 60px;">
+            <div class="container">
+                <h1>Our Specializations</h1>
+                <p>Curated courses designed to transform your communication skills.</p>
+            </div>
+        </section>
+
+        <section class="courses-list">
+            <div class="container">
+                <div class="grid">
+                    <!-- IELTS Coaching -->
+                    <div class="card" id="ielts">
+                        <div style="background: var(--primary); color: white; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-certificate" style="color: white; margin: 0;"></i>
+                        </div>
+                        <h3>IELTS Coaching</h3>
+                        <p style="margin-bottom: 1rem; font-weight: 500;">Achieve your dream IELTS band score with expert guidance.</p>
+                        <p style="margin-bottom: 1rem; opacity: 0.8; font-size: 0.95rem;">Accepted globally for study, work, and immigration. We provide structured training for all four skills:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div>
+                                <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--primary);">Modules</h4>
+                                <ul style="font-size: 0.85rem; opacity: 0.8;">
+                                    <li>• Listening</li>
+                                    <li>• Reading</li>
+                                    <li>• Writing</li>
+                                    <li>• Speaking</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--primary);">Features</h4>
+                                <ul style="font-size: 0.85rem; opacity: 0.8;">
+                                    <li>✔ Personalized attention</li>
+                                    <li>✔ Mock tests & evals</li>
+                                    <li>✔ Vocabulary building</li>
+                                    <li>✔ Time management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="contact.html?course=ielts" class="btn btn-primary" style="width: 100%; justify-content: center;">Enquire Now</a>
+                    </div>
+
+                    <!-- Spoken English -->
+                    <div class="card" id="spoken">
+                        <div style="background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-comments" style="color: white; margin: 0;"></i>
+                        </div>
+                        <h3>Spoken English</h3>
+                        <p style="margin-bottom: 1rem; font-weight: 500;">Speak English fluently and confidently.</p>
+                        <p style="margin-bottom: 1rem; opacity: 0.8; font-size: 0.95rem;">Perfect for students, job seekers, homemakers, and professionals.</p>
+                        
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--secondary);">Highlights</h4>
+                        <ul style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                            <li>✔ Daily practice</li>
+                            <li>✔ Pronunciation</li>
+                            <li>✔ Vocabulary</li>
+                            <li>✔ Role plays</li>
+                            <li>✔ Flexible timings</li>
+                            <li>✔ Indiv. attention</li>
+                        </ul>
+                        <a href="contact.html?course=spoken" class="btn btn-primary" style="width: 100%; justify-content: center;">Enquire Now</a>
+                    </div>
+
+                    <!-- Grammar Mastery -->
+                    <div class="card" id="grammar">
+                        <div style="background: var(--accent); color: white; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-book-open" style="color: white; margin: 0;"></i>
+                        </div>
+                        <h3>Grammar Mastery</h3>
+                        <p style="margin-bottom: 1rem; font-weight: 500;">Grammar is the backbone of communication.</p>
+                        <p style="margin-bottom: 1rem; opacity: 0.8; font-size: 0.95rem;">We make grammar simple, practical, and easy to apply in real-life speaking and writing.</p>
+                        
+                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent);">Learn</h4>
+                        <ul style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                            <li>✔ Tenses</li>
+                            <li>✔ Sentence structure</li>
+                            <li>✔ Vocabulary</li>
+                            <li>✔ Writing skills</li>
+                            <li>✔ Error correction</li>
+                        </ul>
+                        <p style="font-size: 0.85rem; font-style: italic; margin-bottom: 1.5rem; opacity: 0.7;">Build clarity, accuracy, and confidence.</p>
+                        <a href="contact.html?course=grammar" class="btn btn-primary" style="width: 100%; justify-content: center;">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 BELLS English Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+</body>
+</html>
+

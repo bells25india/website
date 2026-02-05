@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BELLS English Academy</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+        .contact-info-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .contact-info-item i {
+            width: 50px;
+            height: 50px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-light);
+            background: var(--card-bg-light);
+            color: inherit;
+            font-family: inherit;
+        }
+        .dark .form-group input, .dark .form-group textarea, .dark .form-group select {
+            border-color: var(--border-dark);
+            background: var(--card-bg-dark);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="brand">
+                <i class="fas fa-bell"></i>
+                <span>BELLS English Academy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="padding: 140px 0 60px;">
+            <div class="container">
+                <h1>Contact BELLS English Academy</h1>
+                <p>We’d love to help you start your English learning journey.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p style="opacity: 0.7;">Palakkad, Kerala</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p style="opacity: 0.7;">+91 98765 43210<br>+91 0491 234567</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p style="opacity: 0.7;">info@bellsacademy.com<br>admissions@bellsacademy.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p style="opacity: 0.7;">Mon – Sat | 9 AM – 7 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding: 3rem;">
+                        <h2 style="margin-bottom: 2rem;">Enquiry Form</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Course Interested</label>
+                                <select id="courseSelect">
+                                    <option value="none">Select a Course</option>
+                                    <option value="ielts">IELTS Coaching</option>
+                                    <option value="spoken">Spoken English</option>
+                                    <option value="grammar">Grammar Mastery</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea rows="4" placeholder="Mention your requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Send Message</button>
+                            <p style="font-size: 0.85rem; opacity: 0.7; text-align: center;">👉 Submit your enquiry and our team will contact you shortly.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 BELLS English Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script>
+        // Handle URL parameters for course selection
+        const urlParams = new URLSearchParams(window.location.search);
+        const course = urlParams.get('course');
+        if (course) {
+            document.getElementById('courseSelect').value = course;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your enquiry! We will get back to you shortly.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
+

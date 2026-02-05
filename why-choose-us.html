@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | BELLS English Academy</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="brand">
+                <i class="fas fa-bell"></i>
+                <span>BELLS English Academy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="why-choose-us.html" class="active">Why Choose Us</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="padding: 140px 0 60px;">
+            <div class="container">
+                <h1>Why Choose BELLS?</h1>
+                <p>We provide more than just lessons; we provide a pathway to success.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="grid">
+                    <div class="card">
+                        <i class="fas fa-person-chalkboard"></i>
+                        <h3>Practical Coaching</h3>
+                        <p>Real-life practice instead of only theory. We focus on how you use English in everyday situations.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>Regular Assessments</h3>
+                        <p>Exams and evaluations to track progress. We ensure every student is moving towards their goals.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-copy"></i>
+                        <h3>Comprehensive Study Materials</h3>
+                        <p>Notes, exercises, and resources for quick learning. Get access to carefully curated academy resources.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Goal-Oriented Plans</h3>
+                        <p>Structured training to achieve measurable results. We map your journey from beginner to expert.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Individual Attention</h3>
+                        <p>Personal mentoring to strengthen each student’s weak areas. No student is left behind at BELLS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 BELLS English Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+</body>
+</html>
+
