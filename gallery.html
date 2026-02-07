@@ -7,7 +7,7 @@
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark');
             }
         })();
@@ -54,40 +54,60 @@
             <div class="container">
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="IELTS Class">
-                        <div class="gallery-overlay">
-                            <h4>Interactive IELTS Class</h4>
-                        </div>
+                        <img src="images/gallery-1.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Academy Life</h4></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600" alt="Group Discussion">
-                        <div class="gallery-overlay">
-                            <h4>Group Discussion Session</h4>
-                        </div>
+                        <img src="images/gallery-2.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Student Activities</h4></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=600" alt="Graduation">
-                        <div class="gallery-overlay">
-                            <h4>Success Celebration</h4>
-                        </div>
+                        <img src="images/gallery-3.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Classroom Session</h4></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="Tech Facility">
-                        <div class="gallery-overlay">
-                            <h4>Modern Learning Hub</h4>
-                        </div>
+                        <img src="images/gallery-4.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Learning Environment</h4></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=600" alt="Seminar">
-                        <div class="gallery-overlay">
-                            <h4>Language Seminar</h4>
-                        </div>
+                        <img src="images/gallery-5.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>IELTS Preparation</h4></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600" alt="Faculty Meeting">
-                        <div class="gallery-overlay">
-                            <h4>Expert Faculty Team</h4>
-                        </div>
+                        <img src="images/gallery-6.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Academy Events</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-7.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Group Learning</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-8.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Campus Moments</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-9.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Success Celebration</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-10.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Interactive Study</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-11.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Mentoring Session</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-12.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Academy Hall</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-13.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Daily Practice</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-14.jpeg" alt="Academy Life">
+                        <div class="gallery-overlay"><h4>Future Leaders</h4></div>
                     </div>
                 </div>
             </div>
@@ -96,8 +116,40 @@
 
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <i class="fas fa-bell"></i>
+                        <span>BELLS Academy</span>
+                    </div>
+                    <p style="opacity: 0.6; margin-top: 1rem;">The Best English Language Coaching Centre in Palakkad. Empowering students since 20XX.</p>
+                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <a href="https://wa.me/918281700999" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #FF0000; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <a href="courses.html#ielts">IELTS</a>
+                    <a href="courses.html#spoken">Spoken English</a>
+                    <a href="courses.html#grammar">Grammar Mastery</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p style="opacity: 0.6; margin-bottom: 0.5rem;"><i class="fas fa-location-dot"></i> Opposite Town Railway Station, Palakkad</p>
+                    <p style="opacity: 0.6;"><i class="fas fa-phone"></i> +91 82817 00999, 7090166664</p>
+                </div>
+            </div>
             <div class="copyright">
-                &copy; 2026 BELLS English Academy. All rights reserved.
+                &copy; 2026 BELLS English Academy. All rights reserved. | Powered by <a href="https://www.webapptiv.com/" target="_blank" style="color: inherit; text-decoration: underline;">Webapptiv</a>
             </div>
         </div>
     </footer>

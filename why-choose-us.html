@@ -7,7 +7,7 @@
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark');
             }
         })();
@@ -85,8 +85,40 @@
 
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <i class="fas fa-bell"></i>
+                        <span>BELLS Academy</span>
+                    </div>
+                    <p style="opacity: 0.6; margin-top: 1rem;">The Best English Language Coaching Centre in Palakkad. Empowering students since 20XX.</p>
+                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <a href="https://wa.me/918281700999" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #FF0000; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <a href="courses.html#ielts">IELTS</a>
+                    <a href="courses.html#spoken">Spoken English</a>
+                    <a href="courses.html#grammar">Grammar Mastery</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p style="opacity: 0.6; margin-bottom: 0.5rem;"><i class="fas fa-location-dot"></i> Opposite Town Railway Station, Palakkad</p>
+                    <p style="opacity: 0.6;"><i class="fas fa-phone"></i> +91 82817 00999, 7090166664</p>
+                </div>
+            </div>
             <div class="copyright">
-                &copy; 2026 BELLS English Academy. All rights reserved.
+                &copy; 2026 BELLS English Academy. All rights reserved. | Powered by <a href="https://www.webapptiv.com/" target="_blank" style="color: inherit; text-decoration: underline;">Webapptiv</a>
             </div>
         </div>
     </footer>

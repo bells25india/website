@@ -7,7 +7,7 @@
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            if (savedTheme === 'dark') {
                 document.documentElement.classList.add('dark');
             }
         })();
@@ -44,13 +44,113 @@
     </nav>
 
     <main>
-        <section class="hero">
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slider" id="mainSlider">
+                    <!-- Slide 1: IELTS -->
+                    <div class="slide active" style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="badge">Featured Course</span>
+                                <h1>IELTS Coaching</h1>
+                                <p>Achieve your dream band score with our specialized IELTS training program. Expert guidance for Listening, Reading, Writing, and Speaking.</p>
+                                <div class="cta-group">
+                                    <a href="courses.html#ielts" class="btn btn-primary">Course Details <i class="fas fa-arrow-right"></i></a>
+                                    <a href="contact.html" class="btn btn-outline">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Spoken English -->
+                    <div class="slide" style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="badge">Most Popular</span>
+                                <h1>Spoken English</h1>
+                                <p>Gain the confidence to speak fluent English in any situation with our interactive training and daily speaking practice sessions.</p>
+                                <div class="cta-group">
+                                    <a href="courses.html#spoken" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                                    <a href="contact.html" class="btn btn-outline">Join Class</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3: Grammar Mastery -->
+                    <div class="slide" style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                        <div class="container">
+                            <div class="slide-content">
+                                <span class="badge">Foundation</span>
+                                <h1>Grammar Mastery</h1>
+                                <p>Build a strong foundation in English grammar with our "Easy English" methods. Clarity, accuracy, and confidence in every sentence.</p>
+                                <div class="cta-group">
+                                    <a href="courses.html#grammar" class="btn btn-primary">Explore Syllabus <i class="fas fa-arrow-right"></i></a>
+                                    <a href="contact.html" class="btn btn-outline">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-nav">
+                    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-snippet">
             <div class="container">
-                <h1>Master English with Confidence.</h1>
-                <p>Speak fluently. Achieve your dreams. BELLS English Academy is a unique and specialized coaching centre dedicated to helping learners overcome language barriers.</p>
-                <div class="cta-group">
-                    <a href="contact.html" class="btn btn-primary">Enroll Today <i class="fas fa-arrow-right"></i></a>
-                    <a href="courses.html" class="btn btn-outline">Explore Courses</a>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" alt="Learning at Bells">
+                    </div>
+                    <div class="about-text">
+                        <div class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+                            <span class="badge" style="margin-bottom: 1rem;">About BELLS</span>
+                            <h2 style="font-size: 2.5rem;">Empowering Your Future Through Language.</h2>
+                            <div class="divider" style="margin: 1rem 0;"></div>
+                        </div>
+                        <p style="font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9;">At BELLS English Academy, we simplify English learning. Whether you are a student aiming for IELTS or a professional looking to improve fluency, our specialized "Easy English" methods ensure fast results and lifelong confidence.</p>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">We focus on practical communication, helping you break through language barriers and achieve your academic or career goals.</p>
+                        <a href="about.html" class="btn btn-outline">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-highlights">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <p>Easy English</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Expert Faculty</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Flexible Timings</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-file-signature"></i>
+                        <p>Mock Tests</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Personal Mentoring</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-medal"></i>
+                        <p>Fast Results</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,30 +162,107 @@
                     <div class="divider"></div>
                 </div>
                 <div class="grid">
-                    <div class="card">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="card offering-card">
+                        <div class="offering-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600" alt="IELTS Coaching">
+                        </div>
                         <h3>IELTS Coaching</h3>
                         <p>Specialized training to help you achieve your desired band score for study or migration.</p>
                     </div>
-                    <div class="card">
-                        <i class="fas fa-comments"></i>
+                    <div class="card offering-card">
+                        <div class="offering-image">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=600" alt="Spoken English">
+                        </div>
                         <h3>Spoken English</h3>
                         <p>Gain the confidence to speak fluent English in any situation with our interactive training.</p>
                     </div>
-                    <div class="card">
-                        <i class="fas fa-book"></i>
+                    <div class="card offering-card">
+                        <div class="offering-image">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=600" alt="Grammar Mastery">
+                        </div>
                         <h3>Grammar Mastery</h3>
                         <p>Build a strong foundation in English grammar with Easy English methods.</p>
                     </div>
-                    <div class="card">
-                        <i class="fas fa-user-tie"></i>
+                    <div class="card offering-card">
+                        <div class="offering-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" alt="Soft Skills">
+                        </div>
                         <h3>Soft Skills</h3>
                         <p>Develop essential communication and personality skills for a successful career.</p>
                     </div>
-                    <div class="card">
-                        <i class="fas fa-handshake"></i>
+                    <div class="card offering-card">
+                        <div class="offering-image">
+                            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600" alt="Personal Mentoring">
+                        </div>
                         <h3>Personal Mentoring</h3>
                         <p>One-on-one guidance to address your specific language challenges and goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-snippet" style="background: var(--bg-card); padding: 100px 0;">
+            <div class="container">
+                <div class="about-grid" style="grid-template-columns: 1.2fr 0.8fr;">
+                    <div class="about-text">
+                        <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                            <span class="badge" style="background: var(--secondary); margin-bottom: 1rem;">Why BELLS?</span>
+                            <h2 style="font-size: 2.8rem;">Your Success is Our Priority.</h2>
+                            <div class="divider" style="margin: 1rem 0; background: var(--secondary);"></div>
+                        </div>
+                        <p style="font-size: 1.15rem; margin-bottom: 1.5rem; opacity: 0.9;">Choosing the right academy is the first step toward excellence. At BELLS, we don't just teach English; we transform how you communicate with the world.</p>
+                        <p style="font-size: 1.15rem; margin-bottom: 2rem; opacity: 0.9;">Our results-driven approach, comprehensive materials, and individual focus make us the preferred choice for hundreds of successful learners every year.</p>
+                        <a href="why-choose-us.html" class="btn btn-primary" style="background: var(--secondary); box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Why Choose Us">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Students Say</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Testimonial 1 -->
+                    <div class="card" style="text-align: center; padding: 3rem 2rem;">
+                        <div class="student-photo" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 3px solid var(--primary);">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" alt="Aju P." style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; opacity: 0.9;">"Joining BELLS was the best decision for my IELTS preparation. The individual attention and mock tests helped me achieve my target band score of 7.5."</p>
+                        <h4 style="color: var(--primary);">Aju P.</h4>
+                        <span style="font-size: 0.85rem; opacity: 0.6;">IELTS Student</span>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="card" style="text-align: center; padding: 3rem 2rem;">
+                        <div class="student-photo" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 3px solid var(--secondary);">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200" alt="Sneha Nair" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; opacity: 0.9;">"I was very hesitant to speak English, but the supportive staff and interactive classes gave me confidence. Now I speak fluently in my professional meetings!"</p>
+                        <h4 style="color: var(--primary);">Sneha Nair</h4>
+                        <span style="font-size: 0.85rem; opacity: 0.6;">Spoken English Student</span>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="card" style="text-align: center; padding: 3rem 2rem;">
+                        <div class="student-photo" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem; border: 3px solid var(--accent);">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Rahul Krishnan" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="stars" style="color: var(--secondary); margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem; opacity: 0.9;">"The Easy English grammar methods are amazing. I never thought learning complex grammar could be this simple. High quality training for everyone."</p>
+                        <h4 style="color: var(--primary);">Rahul Krishnan</h4>
+                        <span style="font-size: 0.85rem; opacity: 0.6;">Grammar Mastery Student</span>
                     </div>
                 </div>
             </div>
@@ -110,6 +287,62 @@
                 </div>
             </div>
         </section>
+
+        <section class="gallery-snippet" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Academy Life</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="gallery-grid-small" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div class="gallery-item-small" style="aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/gallery-1.jpeg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="gallery-item-small" style="aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/gallery-2.jpeg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="gallery-item-small" style="aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/gallery-3.jpeg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="gallery-item-small" style="aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/gallery-4.jpeg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="gallery.html" class="btn btn-outline">View Full Gallery <i class="fas fa-images"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faculty-snippet" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Meet Our Expert Faculty</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="card faculty-card" style="text-align: center;">
+                        <div class="faculty-photo" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem;">
+                            <img src="images/Suresh.jpeg" alt="Suresh P." style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Suresh P.</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Managing Director & Faculty</p>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">MA English Literature | B.Ed. Senior faculty with a mission to break language barriers.</p>
+                    </div>
+                    <div class="card faculty-card" style="text-align: center;">
+                        <div class="faculty-photo" style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem;">
+                            <img src="images/Girija.png" alt="Girija Krishnan" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Girija Krishnan</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Academic Head & Director</p>
+                        <p style="opacity: 0.8; font-size: 0.9rem;">Senior Faculty | IELTS & Soft Skills Expert with 30+ years of global teaching experience.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="faculty.html" class="btn btn-outline">Meet All Faculty <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -121,6 +354,12 @@
                         <span>BELLS Academy</span>
                     </div>
                     <p style="opacity: 0.6; margin-top: 1rem;">The Best English Language Coaching Centre in Palakkad. Empowering students since 20XX.</p>
+                    <div class="social-links" style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                        <a href="https://wa.me/918281700999" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #1877F2; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: #FF0000; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition);"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -136,12 +375,12 @@
                 </div>
                 <div class="footer-links">
                     <h4>Contact</h4>
-                    <p style="opacity: 0.6; margin-bottom: 0.5rem;"><i class="fas fa-location-dot"></i> Palakkad, Kerala</p>
-                    <p style="opacity: 0.6;"><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p style="opacity: 0.6; margin-bottom: 0.5rem;"><i class="fas fa-location-dot"></i> Opposite Town Railway Station, Palakkad</p>
+                    <p style="opacity: 0.6;"><i class="fas fa-phone"></i> +91 82817 00999, 7090166664</p>
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2026 BELLS English Academy. All rights reserved.
+                &copy; 2026 BELLS English Academy. All rights reserved. | Powered by <a href="https://www.webapptiv.com/" target="_blank" style="color: inherit; text-decoration: underline;">Webapptiv</a>
             </div>
         </div>
     </footer>
