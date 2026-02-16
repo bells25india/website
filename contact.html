@@ -42,75 +42,52 @@
     </nav>
 
     <main>
-        <section class="hero" style="padding: 140px 0 60px;">
+        <section class="hero" style="padding: 140px 0 60px; text-align: center;">
             <div class="container">
                 <h1>Contact BELLS English Academy</h1>
                 <p>We’d love to help you start your English learning journey.</p>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" style="padding-top: 20px;">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info">
-                        <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
-                        <div class="contact-info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p style="opacity: 0.7;">Opposite Town Railway Station<br>Palakkad<br>678001</p>
+                    <div class="card" style="padding: 3rem; width: 100%;">
+                        <h2 style="margin-bottom: 3rem; text-align: center;">Get in Touch</h2>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                            <div class="contact-info-item" style="margin-bottom: 0;">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p style="opacity: 0.7;">Opposite Town Railway Station<br>Palakkad, 678001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item" style="margin-bottom: 0;">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p style="opacity: 0.7;">+91 82817 00999<br>7090166664</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item" style="margin-bottom: 0;">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p style="opacity: 0.7;">sureshappupkd@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item" style="margin-bottom: 0;">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Working Hours</h4>
+                                    <p style="opacity: 0.7;">Mon – Sat | 9 AM – 7 PM</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p style="opacity: 0.7;">+91 82817 00999<br>7090166664</p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p style="opacity: 0.7;">sureshappupkd@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Working Hours</h4>
-                                <p style="opacity: 0.7;">Mon – Sat | 9 AM – 7 PM</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card" style="padding: 3rem;">
-                        <h2 style="margin-bottom: 2rem;">Enquiry Form</h2>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" placeholder="Your Full Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Phone</label>
-                                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Course Interested</label>
-                                <select id="courseSelect">
-                                    <option value="none">Select a Course</option>
-                                    <option value="ielts">IELTS Coaching</option>
-                                    <option value="spoken">Spoken English</option>
-                                    <option value="grammar">Grammar Mastery</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Message</label>
-                                <textarea rows="4" placeholder="Mention your requirements..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Send Message</button>
-                            <p style="font-size: 0.85rem; opacity: 0.7; text-align: center;">👉 Submit your enquiry and our team will contact you shortly.</p>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -155,20 +132,6 @@
     </footer>
 
     <script src="theme.js"></script>
-    <script>
-        // Handle URL parameters for course selection
-        const urlParams = new URLSearchParams(window.location.search);
-        const course = urlParams.get('course');
-        if (course) {
-            document.getElementById('courseSelect').value = course;
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your enquiry! We will get back to you shortly.');
-            e.target.reset();
-        });
-    </script>
 </body>
 </html>
 
